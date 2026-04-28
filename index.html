@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arvind Kumar Sharma – Portfolio | Graphic Designer, Web Developer & Sales Professional based in New Delhi">
+    <title>Arvind Kumar Sharma | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <span class="preloader-text">AKS</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">A</span>rvind<span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-up">Hello, I'm</p>
+                <h1 class="hero-name animate-up delay-1">
+                    Arvind Kumar<br>
+                    <span class="gradient-text">Sharma</span>
+                </h1>
+                <div class="hero-titles animate-up delay-2">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description animate-up delay-3">
+                    Results-driven professional combining creative design thinking with strong sales acumen. 
+                    I build brands, craft digital experiences, and convert leads into loyal customers.
+                </p>
+                <div class="hero-cta animate-up delay-4">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Hire Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline" id="downloadResume">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-socials animate-up delay-5">
+                    <a href="mailto:arvindwithcode@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919334208980" class="social-link" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-up delay-2">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <div class="image-glow"></div>
+                    <img src="assets/profile.png" alt="Arvind Kumar Sharma" class="profile-img">
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-palette"></i>
+                    <span>Design</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-code"></i>
+                    <span>Code</span>
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Sales</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-up">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item reveal-up">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Customers Served</span>
+                </div>
+                <div class="stat-item reveal-up">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item reveal-up">
+                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                    <span class="stat-number" data-target="98">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="about-img-wrapper">
+                        <img src="assets/hero-bg.png" alt="About Arvind" class="about-img">
+                        <div class="about-img-overlay"></div>
+                    </div>
+                    <div class="experience-card glass-card">
+                        <span class="exp-number">2+</span>
+                        <span class="exp-text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-info reveal-right">
+                    <p class="about-description">
+                        I'm a multi-skilled professional with a <strong>Bachelor of Arts</strong> from LNMU University, 
+                        bringing together the worlds of <strong>design, technology, and business</strong>. With 2+ years of 
+                        hands-on experience across fintech sales and banking, I understand how to communicate value 
+                        and deliver results.
+                    </p>
+                    <p class="about-description">
+                        On the technical side, I build responsive websites using <strong>HTML, CSS & JavaScript</strong>, 
+                        create compelling visuals with <strong>Graphic Design & Branding</strong> tools, and manage business 
+                        operations with <strong>MS Office, Excel & Tally ERP9</strong>. I'm actively expanding into 
+                        <strong>AI-powered tools, React.js, and full-stack development</strong>.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item glass-card">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="detail-label">Name</span>
+                                <span class="detail-value">Arvind Kumar Sharma</span>
+                            </div>
+                        </div>
+                        <div class="detail-item glass-card">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="detail-label">Date of Birth</span>
+                                <span class="detail-value">06 May, 2002</span>
+                            </div>
+                        </div>
+                        <div class="detail-item glass-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Naraina WZ-36, New Delhi</span>
+                            </div>
+                        </div>
+                        <div class="detail-item glass-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">arvindwithcode@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-interests">
+                        <h3>Interests & Hobbies</h3>
+                        <div class="interest-tags">
+                            <span class="interest-tag"><i class="fas fa-robot"></i> AI</span>
+                            <span class="interest-tag"><i class="fas fa-code"></i> Programming</span>
+                            <span class="interest-tag"><i class="fas fa-paint-brush"></i> Graphic Design</span>
+                            <span class="interest-tag"><i class="fas fa-font"></i> Typography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card reveal-up">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Eye-catching logos, social media graphics, posters, banners, and brand identity designs that make your business stand out.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Logo & Brand Identity</li>
+                        <li><i class="fas fa-check"></i> Social Media Graphics</li>
+                        <li><i class="fas fa-check"></i> Print & Digital Media</li>
+                    </ul>
+                </div>
+                <div class="service-card glass-card reveal-up">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites and landing pages built with clean code. From portfolio sites to business pages.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Responsive Websites</li>
+                        <li><i class="fas fa-check"></i> Landing Pages</li>
+                        <li><i class="fas fa-check"></i> Portfolio & Business Sites</li>
+                    </ul>
+                </div>
+                <div class="service-card glass-card reveal-up">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Sales & Marketing</h3>
+                    <p>Lead generation, client onboarding, and CRM management. I turn prospects into paying customers.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Lead Conversion</li>
+                        <li><i class="fas fa-check"></i> Client Onboarding</li>
+                        <li><i class="fas fa-check"></i> Relationship Management</li>
+                    </ul>
+                </div>
+                <div class="service-card glass-card reveal-up">
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-file-invoice"></i>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Data Entry & Office</h3>
+                    <p>Professional data management, spreadsheet reporting, and accounting support with Tally ERP9.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Excel & Data Analytics</li>
+                        <li><i class="fas fa-check"></i> Tally ERP9 Accounting</li>
+                        <li><i class="fas fa-check"></i> Documentation & Reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Communication</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90" style="--progress-color: #6C63FF;"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-icon"><i class="fas fa-file-word"></i></div>
+                    <h3>Microsoft Word & Excel</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="87" style="--progress-color: #00C9A7;"></div>
+                        </div>
+                        <span class="skill-percent">87%</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>HTML, CSS, JavaScript</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70" style="--progress-color: #FF6B6B;"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Analytical Skills</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="84" style="--progress-color: #FFD93D;"></div>
+                        </div>
+                        <span class="skill-percent">84%</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Learner</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92" style="--progress-color: #C084FC;"></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Graphic Design</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80" style="--progress-color: #F472B6;"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack reveal-up">
+                <h3 class="tech-title">Tools & Technologies</h3>
+                <div class="tech-icons">
+                    <div class="tech-item" data-tooltip="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="Microsoft Office">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="Tally ERP9">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="AI Tools">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="sales">Sales</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card reveal-up" data-category="web">
+                    <div class="project-thumb">
+                        <div class="project-thumb-placeholder"><i class="fas fa-globe"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Development</span>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Modern, responsive portfolio site built with HTML, CSS, JS featuring dark theme and animations.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-up" data-category="design">
+                    <div class="project-thumb">
+                        <div class="project-thumb-placeholder"><i class="fas fa-palette"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Graphic Design</span>
+                        <h3>Brand Identity Package</h3>
+                        <p>Complete branding solution including logo, color palette, typography, and brand guidelines.</p>
+                        <div class="project-tech">
+                            <span>Branding</span><span>Typography</span><span>Logo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-up" data-category="sales">
+                    <div class="project-thumb">
+                        <div class="project-thumb-placeholder"><i class="fas fa-handshake"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Sales & Fintech</span>
+                        <h3>AEPS Retailer Network</h3>
+                        <p>Onboarded 200+ retailers onto Aadhaar-enabled payment system, driving regional digital payments.</p>
+                        <div class="project-tech">
+                            <span>AEPS</span><span>Onboarding</span><span>CRM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-up" data-category="design">
+                    <div class="project-thumb">
+                        <div class="project-thumb-placeholder"><i class="fas fa-ad"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Graphic Design</span>
+                        <h3>Social Media Campaign</h3>
+                        <p>Designed engaging social media posts, stories, and banners for product launches and promotions.</p>
+                        <div class="project-tech">
+                            <span>Social Media</span><span>Banners</span><span>Posters</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-up" data-category="web">
+                    <div class="project-thumb">
+                        <div class="project-thumb-placeholder"><i class="fas fa-store"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Development</span>
+                        <h3>Business Landing Page</h3>
+                        <p>Conversion-focused landing page for a local business with contact forms and Google Maps integration.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span><span>CSS3</span><span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-up" data-category="sales">
+                    <div class="project-thumb">
+                        <div class="project-thumb-placeholder"><i class="fas fa-credit-card"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Banking & Sales</span>
+                        <h3>Credit Card Acquisition</h3>
+                        <p>Achieved 300+ successful credit card sign-ups through strategic outreach and customer education.</p>
+                        <div class="project-tech">
+                            <span>Banking</span><span>Lead Gen</span><span>CRM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Where I've Worked</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 1 Year Experience</span>
+                            <span class="timeline-badge">Sales</span>
+                        </div>
+                        <h3 class="timeline-title">Sales Executive</h3>
+                        <h4 class="timeline-company">AEPS / Relipay / RNFI Services Pvt. Ltd.</h4>
+                        <ul class="timeline-details">
+                            <li>Explained AEPS (Aadhaar Enabled Payment System) services to potential customers and retailers</li>
+                            <li>Onboarded new retailers and assisted them in activating AEPS, DMT, Recharge, and Bill Payment services</li>
+                            <li>Managed daily calling, follow-ups, and converted leads into active customers</li>
+                            <li>Resolved customer queries and guided them in selecting suitable service plans</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>AEPS</span>
+                            <span>DMT</span>
+                            <span>Sales</span>
+                            <span>Customer Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 1 Year Experience</span>
+                            <span class="timeline-badge">Banking</span>
+                        </div>
+                        <h3 class="timeline-title">Bank Sathi</h3>
+                        <h4 class="timeline-company">Credit Card Sales</h4>
+                        <ul class="timeline-details">
+                            <li>Assisted customers with credit card applications and inquiries</li>
+                            <li>Handled basic banking tasks and customer support operations</li>
+                            <li>Built strong client relationships and delivered excellent service</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Credit Cards</span>
+                            <span>Banking</span>
+                            <span>Customer Relations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Education <span class="gradient-text">& Learning</span></h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card glass-card reveal-up">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-info">
+                        <h3>Bachelor of Arts (History)</h3>
+                        <h4>LNMU University, Darbhanga</h4>
+                        <div class="edu-score">
+                            <div class="score-circle" data-score="66.13">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" class="score-bg"/>
+                                    <circle cx="50" cy="50" r="45" class="score-fill" style="--score: 66.13"/>
+                                </svg>
+                                <span class="score-text">66.13%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card glass-card reveal-up">
+                    <div class="edu-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="edu-info">
+                        <h3>12th Standard</h3>
+                        <h4>Intermediate Education</h4>
+                        <div class="edu-score">
+                            <div class="score-circle" data-score="62">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" class="score-bg"/>
+                                    <circle cx="50" cy="50" r="45" class="score-fill" style="--score: 62"/>
+                                </svg>
+                                <span class="score-text">62%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card glass-card reveal-up">
+                    <div class="edu-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="edu-info">
+                        <h3>10th Standard</h3>
+                        <h4>Matriculation</h4>
+                        <div class="edu-score">
+                            <div class="score-circle" data-score="61.6">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" class="score-bg"/>
+                                    <circle cx="50" cy="50" r="45" class="score-fill" style="--score: 61.6"/>
+                                </svg>
+                                <span class="score-text">61.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <h3>Let's work together!</h3>
+                    <p>Feel free to reach out for collaborations, opportunities, or just a friendly hello. 
+                       I'm always open to new ideas and challenges.</p>
+                    <div class="contact-cards">
+                        <a href="mailto:arvindwithcode@gmail.com" class="contact-card glass-card" id="contactEmail">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">arvindwithcode@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919334208980" class="contact-card glass-card" id="contactPhone">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91 9334208980</span>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-card glass-card" id="contactLocation">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Naraina WZ-36, New Delhi - 110028</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="formName" placeholder=" " required>
+                        <label for="formName">Your Name</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" placeholder=" " required>
+                        <label for="formEmail">Your Email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formSubject" placeholder=" " required>
+                        <label for="formSubject">Subject</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" rows="5" placeholder=" " required></textarea>
+                        <label for="formMessage">Your Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="formSubmit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">A</span>rvind<span class="logo-dot">.</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:arvindwithcode@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919334208980" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-text">&copy; 2026 Arvind Kumar Sharma. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
